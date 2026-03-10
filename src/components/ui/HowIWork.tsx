@@ -1,4 +1,8 @@
+import { MdRocketLaunch } from "react-icons/md";
 import SectionHeading from "../SectionHeading";
+import { BsBugFill } from "react-icons/bs";
+import { FaLaptopCode } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
 
 type StepType = {
   id: number;
@@ -74,7 +78,7 @@ function HowIWork() {
           return (
             <div
               key={step.id}
-              className="relative grid gap-10 lg:gap-20 items-center lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]"
+              className="relative grid lg:gap-20 items-center lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]"
             >
               {/* Number + small label rail */}
               <div
@@ -109,20 +113,20 @@ function HowIWork() {
 
               {/* Card side */}
               <div
-                className={`${
+                className={`hidden ${
                   isEven ? "lg:order-1" : "lg:order-2"
-                } flex justify-center`}
+                } lg:flex justify-center`}
               >
                 <div className="relative w-full max-w-md rounded-3xl bg-neutral-gray-900/60 border border-neutral-gray-700/60 shadow-2xl shadow-black/70 backdrop-blur-xl overflow-hidden">
                   <div className="absolute inset-0 bg-linear-to-br from-emerald-500/15 via-sky-400/5 to-transparent pointer-events-none" />
 
                   <div className="flex flex-col items-center gap-6 px-8 py-10">
-                    <div className="h-16 w-16 rounded-2xl flex items-center justify-center bg-neutral-gray-800/80 border border-neutral-gray-700/70 shadow-[0_18px_40px_rgba(16,185,129,0.35)]">
-                      <span className="text-2xl">
-                        {step.id === 1 && "📋"}
-                        {step.id === 2 && "⚙️"}
-                        {step.id === 3 && "🧪"}
-                        {step.id === 4 && "🚀"}
+                    <div className="p-5 rounded-2xl flex items-center justify-center ">
+                      <span className="text-8xl">
+                        {step.id === 1 && <IoIosSearch />}
+                        {step.id === 2 && <FaLaptopCode />}
+                        {step.id === 3 && <BsBugFill />}
+                        {step.id === 4 && <MdRocketLaunch />}
                       </span>
                     </div>
                     <div className="space-y-2 text-center">
@@ -133,23 +137,9 @@ function HowIWork() {
                         {step.title}
                       </p>
                     </div>
-                    <p className="text-sm text-neutral-gray-100/80 text-center">
-                      From first idea to final launch, I keep you in the loop at
-                      every step so the product always matches your
-                      expectations.
-                    </p>
                   </div>
                 </div>
               </div>
-
-              {/* subtle connector arrow */}
-              {step.id !== steps.length && (
-                <div className="hidden lg:block absolute -bottom-10 left-1/2 -translate-x-1/2 pointer-events-none">
-                  <div className="h-16 w-px bg-linear-to-b from-emerald-400/70 via-emerald-400/30 to-transparent relative">
-                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-2 w-2 rotate-45 bg-emerald-400/80" />
-                  </div>
-                </div>
-              )}
             </div>
           );
         })}

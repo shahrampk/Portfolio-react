@@ -108,7 +108,7 @@ function Contact() {
               placeholder="Your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors"
+              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors col-span-full md:col-span-1"
               required
             />
             <input
@@ -116,7 +116,7 @@ function Contact() {
               placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors"
+              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors col-span-full md:col-span-1"
               required
             />
 
@@ -125,7 +125,7 @@ function Contact() {
               placeholder="Phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors"
+              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors col-span-full md:col-span-1"
               required
             />
             <input
@@ -133,7 +133,7 @@ function Contact() {
               placeholder="Subject"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors"
+              className="bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors col-span-full md:col-span-1"
               required
             />
             {/* </div> */}
@@ -142,12 +142,12 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows={4}
-              className="col-span-2 bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors resize-none"
+              className="col-span-full bg-neutral-gray-800/80 border border-neutral-gray-600/60 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-colors resize-none"
               required
             />
             <button
               type="submit"
-              className="col-span-2 mt-2 sm:w-auto transition-colors duration-200 bg-emerald-700 hover:bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg cursor-pointer"
+              className="col-span-full mt-2 sm:w-auto transition-colors duration-200 bg-emerald-700 hover:bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg cursor-pointer"
             >
               Send A Message
             </button>
