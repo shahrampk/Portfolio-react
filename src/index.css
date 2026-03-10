@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --color-neutral-gray-50: #eff5f2;
+  --color-neutral-gray-100: #e0ebe6;
+  --color-neutral-gray-200: #c0d8cc;
+  --color-neutral-gray-300: #a1c4b3;
+  --color-neutral-gray-400: #82b099;
+  --color-neutral-gray-500: #629d80;
+  --color-neutral-gray-600: #4f7d66;
+  --color-neutral-gray-700: #3b5e4d;
+  --color-neutral-gray-800: #273f33;
+  --color-neutral-gray-900: #141f1a;
+  --color-neutral-gray-950: #0e1612;
+
+  --color-neutral-white-50: #eff6f3;
+  --color-neutral-white-100: #deede6;
+  --color-neutral-white-200: #bddbcd;
+  --color-neutral-white-300: #9cc9b5;
+  --color-neutral-white-400: #7bb79c;
+  --color-neutral-white-500: #5ba483;
+  --color-neutral-white-600: #488469;
+  --color-neutral-white-700: #36634f;
+  --color-neutral-white-800: #244234;
+  --color-neutral-white-900: #12211a;
+  --color-neutral-white-950: #0d1712;
+  /* Animation */
+  --animate-wiggle: wiggle ease-in-out 1s infinite;
+}
+
+@keyframes wiggle {
+  to {
+    transform: rotate(180deg);
+  }
+}
+.radial-circle {
+  height: 600px;
+  width: 600px;
+  background: radial-gradient(circle at center, #135338 0%, transparent 70%);
+  border-radius: 50%;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
