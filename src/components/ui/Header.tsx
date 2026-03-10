@@ -35,17 +35,17 @@ function Header() {
             <li>
               <a
                 className="transition-colors duration-200 hover:bg-neutral-gray-800/50 inline-block text-neutral-white-200/90 px-4 py-2 rounded-lg"
-                href="#services-section"
+                href="#process-section"
               >
-                Services
+                Process
               </a>
             </li>
             <li>
               <a
                 className="transition-colors duration-200 hover:bg-neutral-gray-800/50 inline-block text-neutral-white-200/90 px-4 py-2 rounded-lg"
-                href="#skills-section"
+                href="#services-section"
               >
-                Skills
+                Services
               </a>
             </li>
             <li>
@@ -58,8 +58,16 @@ function Header() {
             </li>
             <li>
               <a
+                className="transition-colors duration-200 hover:bg-neutral-gray-800/50 inline-block text-neutral-white-200/90 px-4 py-2 rounded-lg"
+                href="#skills-section"
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
                 className="transition-colors duration-200 bg-emerald-700 hover:bg-emerald-800 text-neutral-white-200/90 px-4 py-2 rounded-lg"
-                href="#"
+                href="#contact-section"
               >
                 Contact me
               </a>
