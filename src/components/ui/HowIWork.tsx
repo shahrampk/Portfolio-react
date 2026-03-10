@@ -67,18 +67,18 @@ function HowIWork() {
   return (
     <section
       id="process-section"
-      className="flex flex-col gap-20 container mx-auto px-4"
+      className="container mx-auto flex flex-col gap-14 px-4 sm:px-6 lg:px-8 md:gap-20"
     >
       <SectionHeading subTitle1="My" subTitle2="Working" mainTitle="Process" />
 
-      <div className="flex flex-col gap-36">
+      <div className="flex flex-col gap-14 md:gap-24 xl:gap-32">
         {steps.map((step, index) => {
           const isEven = index % 2 === 1;
 
           return (
             <div
               key={step.id}
-              className="relative grid lg:gap-20 items-center lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)]"
+              className="relative grid items-center gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-24 2xl:gap-28"
             >
               {/* Number + small label rail */}
               <div
@@ -87,22 +87,22 @@ function HowIWork() {
                 }`}
               >
                 <div className="flex items-center gap-4">
-                  <span className="text-4xl md:text-5xl font-semibold text-emerald-500">
+                  <span className="text-4xl font-semibold text-emerald-500 md:text-5xl 2xl:text-6xl">
                     {step.label}
                   </span>
                   <div className="h-px flex-1 bg-linear-to-r from-emerald-500/60 via-emerald-400/40 to-transparent" />
                 </div>
 
-                <div className="max-w-xl">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-neutral-white-50 mb-4">
+                <div className="max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+                  <h3 className="mb-4 text-2xl font-semibold text-neutral-white-50 md:text-3xl 2xl:text-4xl">
                     {step.title}
                   </h3>
-                  <p className="text-neutral-gray-100/90 mb-4">
+                  <p className="mb-4 text-neutral-gray-100/90 md:text-lg 2xl:text-xl 2xl:leading-relaxed">
                     {step.description}
                   </p>
-                  <ul className="space-y-2 text-sm md:text-base text-neutral-gray-50/90">
+                  <ul className="space-y-2 text-sm text-neutral-gray-50/90 md:text-base 2xl:text-lg">
                     {step.bulletPoints.map((point) => (
-                      <li key={point} className="flex items-center gap-2 ">
+                      <li key={point} className="flex items-start gap-2">
                         <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500" />
                         <span>{point}</span>
                       </li>
@@ -113,16 +113,16 @@ function HowIWork() {
 
               {/* Card side */}
               <div
-                className={`hidden ${
+                className={`flex justify-center ${
                   isEven ? "lg:order-1" : "lg:order-2"
-                } lg:flex justify-center`}
+                } mt-2 lg:mt-0`}
               >
-                <div className="relative w-full max-w-md rounded-3xl bg-neutral-gray-900/60 border border-neutral-gray-700/60 shadow-2xl shadow-black/70 backdrop-blur-xl overflow-hidden">
+                <div className="relative w-full max-w-sm overflow-hidden rounded-3xl border border-neutral-gray-700/60 bg-neutral-gray-900/60 shadow-2xl shadow-black/70 backdrop-blur-xl sm:max-w-md xl:max-w-lg 2xl:max-w-xl">
                   <div className="absolute inset-0 bg-linear-to-br from-emerald-500/15 via-sky-400/5 to-transparent pointer-events-none" />
 
-                  <div className="flex flex-col items-center gap-6 px-8 py-10">
-                    <div className="p-5 rounded-2xl flex items-center justify-center ">
-                      <span className="text-8xl">
+                  <div className="flex flex-col items-center gap-6 px-6 py-8 sm:px-8 sm:py-10 2xl:px-10 2xl:py-12">
+                    <div className="flex items-center justify-center rounded-2xl p-4 sm:p-5">
+                      <span className="text-7xl sm:text-8xl 2xl:text-9xl">
                         {step.id === 1 && <IoIosSearch />}
                         {step.id === 2 && <FaLaptopCode />}
                         {step.id === 3 && <BsBugFill />}
@@ -133,7 +133,7 @@ function HowIWork() {
                       <p className="text-xs uppercase tracking-[0.2em] text-emerald-300/90">
                         Phase {step.id}
                       </p>
-                      <p className="text-lg font-semibold text-neutral-white-50">
+                      <p className="text-lg font-semibold text-neutral-white-50 2xl:text-xl">
                         {step.title}
                       </p>
                     </div>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 @theme {
+  --breakpoint-3xl: 1920px;
   --font-inter: "Inter", sans-serif;
   --color-neutral-gray-50: #eff5f2;
   --color-neutral-gray-100: #e0ebe6;

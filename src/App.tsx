@@ -1,13 +1,12 @@
-import Testimonial from "../src/components/ui/Testimonial";
-import About from "./components/ui/About";
 import Header from "./components/ui/Header";
 import Hero from "./components/ui/Hero";
 import Projects from "./components/ui/Projects";
 import Skills from "./components/ui/Skills";
 import CTA from "./components/ui/CTA";
-import Services from "./components/ui/Services";
 import HowIWork from "./components/ui/HowIWork";
 import Contact from "./components/ui/Contact";
+import Services from "./components/ui/Services";
+import Testimonial from "./components/ui/Testimonial";
 function App() {
   return (
     <div className="font-inter flex flex-col gap-40 pb-20 selection:bg-neutral-gray-600/60 selection:text-emerald-100 overflow-x-hidden">
@@ -18,7 +17,7 @@ function App() {
         <Hero />
       </>
       {/* About me */}
-      <About />
+      {/* <About /> */}
       {/* Working Process */}
       <HowIWork />
       {/* Services */}

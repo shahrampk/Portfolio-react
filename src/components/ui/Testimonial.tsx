@@ -48,11 +48,11 @@ function testimonial() {
   return (
     <div className="flex flex-col gap-20 container mx-auto px-4 ">
       <SectionHeading
-        subTitle1="See what People"
-        subTitle2="Says"
-        mainTitle="Testimonials that speaks for me"
+        subTitle1="People's"
+        subTitle2="Testimonials"
+        mainTitle="See what People says"
       />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {testimonialsData.map((testimonial) => (
           <TestimonialsCard
             key={testimonial.id}
