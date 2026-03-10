@@ -7,9 +7,10 @@ import HowIWork from "./components/ui/HowIWork";
 import Contact from "./components/ui/Contact";
 import Services from "./components/ui/Services";
 import Testimonial from "./components/ui/Testimonial";
+import About from "./components/ui/About";
 function App() {
   return (
-    <div className="font-inter flex flex-col gap-40 pb-20 selection:bg-neutral-gray-600/60 selection:text-emerald-100 overflow-x-hidden">
+    <div className="font-inter flex flex-col gap-20 md:gap-40 pb-20 selection:bg-neutral-gray-600/60 selection:text-emerald-100 overflow-x-hidden">
       <div className="fixed -top-10 right-0 radial-circle -z-10"></div>
       <Header />
       <>
@@ -17,7 +18,7 @@ function App() {
         <Hero />
       </>
       {/* About me */}
-      {/* <About /> */}
+      <About />
       {/* Working Process */}
       <HowIWork />
       {/* Services */}

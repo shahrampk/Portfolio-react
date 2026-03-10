@@ -5,10 +5,10 @@ function About() {
   return (
     <section
       id="about-section"
-      className="grid grid-cols-5 gap-5 items-center container mx-auto px-4 "
+      className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-center container mx-auto px-4 "
     >
       <div className="flex justify-start items-center col-span-2">
-        <div className="border-l-20 border-b-20 border-emerald-900 p-5">
+        <div className="hidden lg:block border-l-20 border-b-20 border-emerald-900 p-5">
           <img
             src={aboutImage}
             alt="My Photo"
