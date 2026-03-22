@@ -1,5 +1,8 @@
 import SectionHeading from "../SectionHeading";
 import TestimonialsCard from "../TestimonialCard";
+import image1  from "../../assets/peopleImage/people-1.jpg";
+import image2  from "../../assets/peopleImage/people-2.jpg";
+import image3  from "../../assets/peopleImage/people-3.jpg";
 
 interface TestimonialType {
   id: number;
@@ -10,13 +13,12 @@ interface TestimonialType {
   rating: number;
   isCentered: boolean;
 }
-
 const testimonialsData: TestimonialType[] = [
   {
     id: 1,
     name: "Zoya Noor",
     role: "Lead Product Designer",
-    avatarPath: "/peopleImage/people-3.jpg",
+    avatarPath:image3,
     feedback:
       "I worked with him on several college projects, and he always delivered clean and well-structured code. He’s reliable and pays attention to small details.",
     rating: 5,
@@ -26,7 +28,7 @@ const testimonialsData: TestimonialType[] = [
     id: 2,
     name: "Ahmad Ali",
     role: "Senior Full-Stack Engineer",
-    avatarPath: "/peopleImage/people-1.jpg",
+    avatarPath: image1,
     feedback:
       "Working with him on our web development assignment was great. He focuses on good design and makes sure the user experience is smooth.",
     rating: 5,
@@ -36,7 +38,7 @@ const testimonialsData: TestimonialType[] = [
     id: 3,
     name: "Rida Fatima",
     role: "Marketing Director",
-    avatarPath: "/peopleImage/people-2.jpg",
+    avatarPath: image2,
     feedback:
       "He takes his development work seriously and always tries to improve his projects. I like how he focuses on both design and functionality.",
     rating: 5,

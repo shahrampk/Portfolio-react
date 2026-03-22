@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @theme {
   --breakpoint-3xl: 1920px;
+  --breakpoint-sx: 320px;
   --font-inter: "Inter", sans-serif;
   --color-neutral-gray-50: #eff5f2;
   --color-neutral-gray-100: #e0ebe6;
@@ -52,4 +53,29 @@
     rgba(0, 0, 0, 0.6) 70%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.container {
+  width: 100%;
+  @media (width >= 320px) {
+    max-width: 320px;
+  }
+  @media (width >= 1920px) {
+    max-width: 1920px;
+  }
+  @media (width >= 40rem /* 640px */) {
+    max-width: 40rem /* 640px */;
+  }
+  @media (width >= 48rem /* 768px */) {
+    max-width: 48rem /* 768px */;
+  }
+  @media (width >= 64rem /* 1024px */) {
+    max-width: 64rem /* 1024px */;
+  }
+  @media (width >= 80rem /* 1280px */) {
+    max-width: 80rem /* 1280px */;
+  }
+  @media (width >= 96rem /* 1536px */) {
+    max-width: 96rem /* 1536px */;
+  }
 }

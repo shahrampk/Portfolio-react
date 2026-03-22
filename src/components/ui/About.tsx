@@ -1,34 +1,34 @@
 import Button from "../Button";
-import aboutImage from "../../assets/my-photo.png";
+import aboutImage from "../../assets/my-photo.avif";
 
 function About() {
   return (
     <section
       id="about-section"
-      className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-center container mx-auto px-4 "
+      className="grid grid-cols-1 md:grid-cols-5 lg:gap-5 items-center container mx-auto px-4 "
     >
-      <div className="flex justify-start items-center col-span-2">
-        <div className="hidden lg:block border-l-20 border-b-20 border-emerald-900 p-5">
+      <div className="hidden md:flex justify-start items-center col-span-2">
+        <div className="border-l-10 border-b-10 lg:border-l-20 lg:border-b-20 border-emerald-900 p-5">
           <img
             src={aboutImage}
             alt="My Photo"
-            className="w-96 scale-3d scale-110 translate-x-7 -translate-y-7"
+            className="w-96 scale-3d scale-110 lg:translate-x-7 lg:-translate-y-7"
           />
         </div>
       </div>
       <div className="col-span-3 flex flex-col gap-5 items-start">
         {/* sub Title */}
         <div>
-          <p className="text-2xl font-semibold">
+          <p className="text-lg md:text-2xl font-semibold 3xl:text-5xl">
             About <span className="text-emerald-700">Me</span>
           </p>
 
-          <h1 className="text-4xl my-2 font-semibold">
+          <h1 className="text-2xl sm:text-4xl font-semibold my-2">
             Hi, I’m Shahram a Frontend Developer
           </h1>
         </div>
         {/* Title */}
-        <p className=" leading-relaxed">
+        <p className="text-sm sm:text-base 3xl:text-3xl leading-relaxed text-neutral-white-200/90 3xl:max-w-2xl 3xl:leading-loose 3xl:tracking-wider">
           I'm Shahram, an enthusiastic web developer with a focus on creating
           cutting-edge, responsive, and intuitive online applications. My
           proficiency with <b className="text-emerald-600">TypeScript</b>,{" "}

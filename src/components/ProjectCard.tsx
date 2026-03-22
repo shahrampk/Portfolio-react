@@ -9,8 +9,6 @@ interface ProjectCardDetails {
   color: string;
 }
 function ProjectCard({ details }: { details: ProjectCardDetails }) {
-  console.log(details);
-
   return (
     <div className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
       {/* Top Half: Image */}

@@ -5,8 +5,8 @@ type TitleType = {
 };
 function SectionHeading({ subTitle1, subTitle2, mainTitle }: TitleType) {
   return (
-    <div className="flex flex-col gap-2 items-center">
-      <p className="text-lg md:text-xl xl:text-2xl 3xl:text-3xl font-semibold">
+    <div className="flex flex-col items-center">
+      <p className="text-lg md:text-2xl font-semibold 3xl:text-5xl">
         {subTitle1} <span className="text-emerald-700">{subTitle2}</span>
       </p>
 

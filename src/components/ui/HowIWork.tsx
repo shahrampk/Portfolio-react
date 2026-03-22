@@ -93,11 +93,11 @@ function HowIWork() {
                   <div className="h-px flex-1 bg-linear-to-r from-emerald-500/60 via-emerald-400/40 to-transparent" />
                 </div>
 
-                <div className="max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
-                  <h3 className="mb-4 text-2xl font-semibold text-neutral-white-50 md:text-3xl 2xl:text-4xl">
+                <div className="max-w-xl xl:max-w-2xl 2xl:max-w-3xl flex flex-col gap-4">
+                  <h3 className="text-2xl font-semibold text-neutral-white-50 md:text-3xl 2xl:text-4xl">
                     {step.title}
                   </h3>
-                  <p className="mb-4 text-neutral-gray-100/90 md:text-lg 2xl:text-xl 2xl:leading-relaxed">
+                  <p className="text-sm sm:text-base 3xl:text-3xl leading-relaxed text-neutral-white-200/90 3xl:max-w-2xl 3xl:leading-loose 3xl:tracking-wider">
                     {step.description}
                   </p>
                   <ul className="space-y-2 text-sm text-neutral-gray-50/90 md:text-base 2xl:text-lg">

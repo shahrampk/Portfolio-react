@@ -6,7 +6,7 @@ function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   useEffect(() => {
     const onScroll = () => {
-      if (window.pageYOffset > 150) {
+      if (window.pageYOffset > 10) {
         setGiveBackGround(true);
       } else {
         setGiveBackGround(false);
@@ -43,7 +43,7 @@ function Header() {
     >
       <div className="container flex justify-between items-center px-4 py-5 mx-auto ">
         <div>
-          <h1 className="tracking-wider text-2xl font-semibold text-white">
+          <h1 className="tracking-wider  font-semibold text-white">
             Muhammad Shahram
           </h1>
         </div>
