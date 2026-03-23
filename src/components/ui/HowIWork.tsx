@@ -1,8 +1,9 @@
-import { MdRocketLaunch } from "react-icons/md";
 import SectionHeading from "../SectionHeading";
-import { BsBugFill } from "react-icons/bs";
-import { FaLaptopCode } from "react-icons/fa";
-import { IoIosSearch } from "react-icons/io";
+import planingPhase from "../../assets/phases/planing.avif";
+import testingPhase from "../../assets/phases/testing.avif";
+import developmentPhase from "../../assets/phases/development.avif";
+import launchingPhase from "../../assets/phases/launch.avif";
+import { Suspense } from "react";
 
 type StepType = {
   id: number;
@@ -10,6 +11,7 @@ type StepType = {
   title: string;
   description: string;
   bulletPoints: string[];
+  imgURL: string;
 };
 
 const steps: StepType[] = [
@@ -24,6 +26,7 @@ const steps: StepType[] = [
       "Research competitors and best practices",
       "Define a clear roadmap and priorities",
     ],
+    imgURL: planingPhase,
   },
   {
     id: 2,
@@ -36,6 +39,7 @@ const steps: StepType[] = [
       "Build reusable, well-structured components",
       "Integrate APIs and real data flows",
     ],
+    imgURL: developmentPhase,
   },
   {
     id: 3,
@@ -48,6 +52,7 @@ const steps: StepType[] = [
       "Fix edge cases and polish UX details",
       "Optimize load time and interactions",
     ],
+    imgURL: testingPhase,
   },
   {
     id: 4,
@@ -60,6 +65,7 @@ const steps: StepType[] = [
       "Monitor, refine, and apply final tweaks",
       "Provide documentation and ongoing support options",
     ],
+    imgURL: launchingPhase,
   },
 ];
 
@@ -112,33 +118,21 @@ function HowIWork() {
               </div>
 
               {/* Card side */}
+
               <div
                 className={`flex justify-center ${
                   isEven ? "lg:order-1" : "lg:order-2"
-                } mt-2 lg:mt-0`}
+                } mt-2 lg:mt-0 overflow-hidden`}
               >
-                <div className="relative w-full max-w-sm overflow-hidden rounded-3xl border border-neutral-gray-700/60 bg-neutral-gray-900/60 shadow-2xl shadow-black/70 backdrop-blur-xl sm:max-w-md xl:max-w-lg 2xl:max-w-xl">
-                  <div className="absolute inset-0 bg-linear-to-br from-emerald-500/15 via-sky-400/5 to-transparent pointer-events-none" />
-
-                  <div className="flex flex-col items-center gap-6 px-6 py-8 sm:px-8 sm:py-10 2xl:px-10 2xl:py-12">
-                    <div className="flex items-center justify-center rounded-2xl p-4 sm:p-5">
-                      <span className="text-7xl sm:text-8xl 2xl:text-9xl">
-                        {step.id === 1 && <IoIosSearch />}
-                        {step.id === 2 && <FaLaptopCode />}
-                        {step.id === 3 && <BsBugFill />}
-                        {step.id === 4 && <MdRocketLaunch />}
-                      </span>
-                    </div>
-                    <div className="space-y-2 text-center">
-                      <p className="text-xs uppercase tracking-[0.2em] text-emerald-300/90">
-                        Phase {step.id}
-                      </p>
-                      <p className="text-lg font-semibold text-neutral-white-50 2xl:text-xl">
-                        {step.title}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <Suspense fallback="Loading...">
+                  <div className="bg-linear-to-br from-emerald-500/15 via-sky-400/5 to-transparent pointer-events-none"></div>
+                  <img
+                    loading="lazy"
+                    src={step.imgURL}
+                    alt={step.title}
+                    className="aspect-video object-cover rounded-xl shadow-2xl shadow-black/50 hover:scale-110 transition-transform"
+                  />
+                </Suspense>
               </div>
             </div>
           );

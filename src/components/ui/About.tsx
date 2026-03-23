@@ -10,6 +10,7 @@ function About() {
       <div className="hidden md:flex justify-start items-center col-span-2">
         <div className="border-l-10 border-b-10 lg:border-l-20 lg:border-b-20 border-emerald-900 p-5">
           <img
+            loading="lazy"
             src={aboutImage}
             alt="My Photo"
             className="w-96 scale-3d scale-110 lg:translate-x-7 lg:-translate-y-7"

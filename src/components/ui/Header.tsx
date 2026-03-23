@@ -43,7 +43,7 @@ function Header() {
     >
       <div className="container flex justify-between items-center px-4 py-5 mx-auto ">
         <div>
-          <h1 className="tracking-wider  font-semibold text-white">
+          <h1 className="tracking-wider md:text-xl font-semibold text-white">
             Muhammad Shahram
           </h1>
         </div>

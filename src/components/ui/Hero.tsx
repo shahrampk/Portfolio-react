@@ -45,6 +45,7 @@ function Hero() {
               <div className="absolute left-1/2 top-0 h-full w-28 -translate-x-1/2 rotate-45 bg-emerald-600 animate-wiggle sm:w-32 md:w-36" />
               <div className="relative z-10 flex h-64 w-64 items-center justify-center overflow-hidden rounded-full sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 3xl:h-112 3xl:w-md">
                 <img
+                  loading="lazy"
                   src={heroImage}
                   alt="Portrait of Muhammad Shahram"
                   className="h-full w-full object-cover"

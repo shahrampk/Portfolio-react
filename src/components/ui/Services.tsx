@@ -45,13 +45,15 @@ function Services() {
             key={service.id}
             className="flex flex-col group items-center text-center gap-5"
           >
-            <p className="icon text-4xl 3xl:text-5xl text-neutral-white-100 bg-neutral-gray-800/50 duration-200 group-hover:bg-neutral-gray-800 h-20 w-20 lg:h-24 lg:w-24 rounded-full select-none flex items-center justify-center">
+            <p className="icon text-4xl 3xl:text-5xl bg-neutral-gray-800/50 duration-200 group-hover:bg-neutral-gray-800 h-20 w-20 lg:h-24 lg:w-24 rounded-full select-none flex items-center justify-center">
               {service.icon}
             </p>
             <h3 className="text-xl md:text-2xl 3xl:text-4xl font-semibold">
               {service.heading}
             </h3>
-            <p className="description">{service.description}</p>
+            <p className="description text-neutral-white-200">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>

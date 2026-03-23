@@ -4,6 +4,7 @@ import WorldAtlasImage from "../../assets/projectImages/WroldAtlas.png";
 import CineSeekImage from "../../assets/projectImages/cineseek.png";
 import Button from "../Button";
 import SectionHeading from "../SectionHeading";
+import { Suspense } from "react";
 type ProjectCardDetails = {
   id: number;
   name: string;
@@ -52,12 +53,13 @@ function Projects() {
         subTitle2="Featured"
         mainTitle="Projects"
       />
-
-      <div className="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-2 gap-10">
-        {projectsData.map((projectDetails) => (
-          <ProjectCard key={projectDetails.id} details={projectDetails} />
-        ))}
-      </div>
+      <Suspense fallback="Loading...">
+        <div className="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-2 gap-10">
+          {projectsData.map((projectDetails) => (
+            <ProjectCard key={projectDetails.id} details={projectDetails} />
+          ))}
+        </div>
+      </Suspense>
       <div>
         <Button
           text="See More"
