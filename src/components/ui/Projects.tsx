@@ -46,7 +46,7 @@ function Projects() {
   return (
     <section
       id="projects-section"
-      className="container mx-auto flex flex-col items-center gap-20  px-4"
+      className=" flex flex-col items-center gap-20  px-4"
     >
       <SectionHeading
         subTitle1="My"

@@ -2,7 +2,7 @@ import Button from "../Button";
 import heroImage from "../../assets/my-photo.avif";
 function Hero() {
   return (
-    <section className="container mx-auto md:mt-12 flex items-center sm:mt-0 px-4 pt-24">
+    <section className=" md:mt-12 flex items-center sm:mt-0 px-4 pt-24">
       <div className="grid md:grid-cols-2 items-center gap-10 lg:gap-14 3xl:gap-20">
         <div className="flex flex-col gap-3 sm:gap-8">
           <h1 className="flex flex-col">

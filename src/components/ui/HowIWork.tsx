@@ -73,7 +73,7 @@ function HowIWork() {
   return (
     <section
       id="process-section"
-      className="container mx-auto flex flex-col gap-14 px-4 sm:px-6 lg:px-8 md:gap-20"
+      className=" flex flex-col gap-14 px-4 sm:px-6 lg:px-8 md:gap-20"
     >
       <SectionHeading subTitle1="My" subTitle2="Working" mainTitle="Process" />
 

@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about-section"
-      className="container mx-auto grid grid-cols-1 md:grid-cols-5 md:gap-10 items-center px-4 "
+      className=" grid grid-cols-1 md:grid-cols-5 md:gap-10 items-center px-4 "
     >
       <div className="hidden md:flex justify-start items-center col-span-2">
         <div className="border-l-10 border-b-10 lg:border-l-20 lg:border-b-20 border-emerald-900 p-5">

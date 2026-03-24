@@ -13,7 +13,7 @@ function CTA() {
           <br /> feel free to reach out.
         </p>
 
-        <Button text="Hire me" rout="#" />
+        <Button text="Hire me" rout="#contact-section" />
       </div>
     </section>
   );

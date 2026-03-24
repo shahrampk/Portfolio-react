@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
-function Header() {
+function Header({
+  moveToSection,
+}: {
+  moveToSection: (section: string) => void;
+}) {
   const [giveBackGround, setGiveBackGround] = useState<boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   useEffect(() => {
@@ -37,22 +41,20 @@ function Header() {
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
-  const moveToTop = function () {
-    console.log("ok");
-    window.scrollTo(0, 0);
-  };
+  // const moveToTop = () => window.scrollTo(0, 0);
 
   return (
     <header
+      id="header"
       className={`fixed top-0 left-0 right-0 z-50 ${
         giveBackGround ? "bg-neutral-gray-700/30 backdrop-blur-2xl" : ""
       }`}
     >
-      <div className="container flex justify-between items-center px-4 py-5 mx-auto">
+      <div className="md:container flex justify-between items-center px-4 py-5 mx-auto">
         {/* Site Title */}
         <h1
           className="tracking-wider md:text-xl font-semibold text-white cursor-pointer"
-          onClick={moveToTop}
+          onClick={() => moveToSection("header")}
         >
           Muhammad Shahram
         </h1>

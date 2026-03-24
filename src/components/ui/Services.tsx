@@ -33,10 +33,7 @@ const services: ServiceType[] = [
 ];
 function Services() {
   return (
-    <section
-      id="services-section"
-      className="container mx-auto flex flex-col gap-20"
-    >
+    <section id="services-section" className=" flex flex-col gap-20">
       <SectionHeading
         subTitle1="My"
         subTitle2="Provided"
