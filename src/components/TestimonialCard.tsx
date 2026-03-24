@@ -32,7 +32,7 @@ const TestimonialCard = ({
 
   return (
     <div
-      className={`max-w-sm w-full mx-auto p-8 rounded-3xl bg-neutral-gray-900 border border-gray-800 shadow-2xl flex flex-col items-center text-center transition-all ${isCentered ? "scale-110 bg-neutral-gray-800!" : "hover:scale-105 hover:bg-neutral-gray-800/80"}`}
+      className={`max-w-sm w-full mx-auto p-8 rounded-3xl bg-neutral-gray-900 border border-gray-800 shadow-2xl flex flex-col items-center text-center transition-all ${isCentered && window.innerWidth > 768 ? "scale-110 bg-neutral-gray-800!" : "hover:scale-105 hover:bg-neutral-gray-800/80"}`}
     >
       {/* Avatar Container */}
       <div className="relative mb-6">

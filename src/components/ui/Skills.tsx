@@ -60,7 +60,7 @@ function Skills() {
   return (
     <section
       id="skills-section"
-      className="flex flex-col gap-20 container mx-auto px-4 "
+      className="container mx-auto flex flex-col gap-20  px-4 "
     >
       <SectionHeading subTitle1="My" subTitle2="Core" mainTitle="Skill Set" />
       <div className="flex flex-col gap-5">

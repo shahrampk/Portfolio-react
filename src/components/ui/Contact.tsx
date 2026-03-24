@@ -35,7 +35,7 @@ function Contact() {
   return (
     <section
       id="contact-section"
-      className="flex flex-col gap-20 container mx-auto px-4"
+      className="flex flex-col gap-20 container mx-auto  px-4"
     >
       <SectionHeading subTitle1="Let's" subTitle2="Work" mainTitle="Together" />
       <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-16 items-center">

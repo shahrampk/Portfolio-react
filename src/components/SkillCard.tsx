@@ -33,7 +33,7 @@ function SkillCard({ skillData }: { skillData: SkillsType }) {
       </div>
 
       {/* Subtle glow effect on hover */}
-      <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity text-xs text-gray-500 italic">
+      <div className="mt-4 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity text-xs text-gray-500 italic">
         Experience with complex {skillData.name} architectures.
       </div>
     </div>

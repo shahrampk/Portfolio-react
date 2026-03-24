@@ -33,13 +33,16 @@ const services: ServiceType[] = [
 ];
 function Services() {
   return (
-    <section id="services-section" className="flex flex-col gap-20">
+    <section
+      id="services-section"
+      className="container mx-auto flex flex-col gap-20"
+    >
       <SectionHeading
         subTitle1="My"
         subTitle2="Provided"
         mainTitle="Services"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-20 lg:gap-32 container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-10 lg:gap-24  px-4">
         {services.map((service) => (
           <div
             key={service.id}

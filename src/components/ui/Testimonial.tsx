@@ -1,8 +1,8 @@
 import SectionHeading from "../SectionHeading";
 import TestimonialsCard from "../TestimonialCard";
-import image1  from "../../assets/peopleImage/people-1.jpg";
-import image2  from "../../assets/peopleImage/people-2.jpg";
-import image3  from "../../assets/peopleImage/people-3.jpg";
+import image1 from "../../assets/peopleImage/people-1.jpg";
+import image2 from "../../assets/peopleImage/people-2.jpg";
+import image3 from "../../assets/peopleImage/people-3.jpg";
 
 interface TestimonialType {
   id: number;
@@ -18,7 +18,7 @@ const testimonialsData: TestimonialType[] = [
     id: 1,
     name: "Zoya Noor",
     role: "Lead Product Designer",
-    avatarPath:image3,
+    avatarPath: image3,
     feedback:
       "I worked with him on several college projects, and he always delivered clean and well-structured code. He’s reliable and pays attention to small details.",
     rating: 5,
@@ -48,12 +48,13 @@ const testimonialsData: TestimonialType[] = [
 
 function testimonial() {
   return (
-    <div className="flex flex-col gap-20 container mx-auto px-4 ">
+    <section className="container mx-auto flex flex-col gap-20  px-4">
       <SectionHeading
         subTitle1="People's"
         subTitle2="Testimonials"
         mainTitle="See what People says"
       />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {testimonialsData.map((testimonial) => (
           <TestimonialsCard
@@ -62,7 +63,7 @@ function testimonial() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
