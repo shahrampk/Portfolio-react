@@ -1,5 +1,6 @@
 import ProjectCard from "../ProjectCard";
 import ForkifyImage from "../../assets/projectImages/forkify.png";
+import LuminaImage from "../../assets/projectImages/lumina.png";
 import CineSeekImage from "../../assets/projectImages/cineseek.png";
 import Button from "../Button";
 import SectionHeading from "../SectionHeading";
@@ -27,7 +28,7 @@ const projectsData: ProjectCardDetails[] = [
     name: "Lumina",
     description:
       "Lumina is a visual discovery platform designed to help users discover, explore, and organize inspiring photography in one place. Users can search and browse a constantly updated collection of high-quality images, explore trending and recent searches, and organize discoveries into personalized collections. The platform is being developed toward a smarter, more personalized visual discovery experience with AI-powered search planned for future releases.",
-    image: "https://i.ibb.co/htghBQD/Screenshot-From-2026-09-01-22-27-00.png",
+    image: LuminaImage,
     link: "https://lumina-shahrampk.vercel.app/",
     color: "from-blue-500",
   },
