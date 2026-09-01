@@ -34,7 +34,10 @@ function ProjectCard({ details }: { details: ProjectCardDetails }) {
 
       <div className=" absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-linear-to-t from-neutral-gray-900 via-neutral-gray-800/50 to-neutral-gray-700/0 transform lg:translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-40">
         <h3 className="text-xl font-bold text-white mb-1">{details.name}</h3>
-        <p className="text-gray-300 text-sm leading-relaxed ">
+        <p
+          title={details.description}
+          className="text-gray-300 text-sm leading-relaxed line-clamp-4"
+        >
           {details.description}
         </p>
       </div>

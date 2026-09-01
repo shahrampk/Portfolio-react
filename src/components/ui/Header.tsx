@@ -46,11 +46,13 @@ function Header({
   return (
     <header
       id="header"
-      className={`fixed top-0 left-0 right-0 z-50 ${
-        giveBackGround ? "bg-neutral-gray-700/30 backdrop-blur-2xl" : ""
+      className={`fixed z-50 transition-all duration-200 ${
+        giveBackGround
+          ? "bg-teal-950/60 backdrop-blur-3xl top-5 left-10 right-10 rounded-full"
+          : "top-0 left-0 right-0"
       }`}
     >
-      <div className="md:container flex justify-between items-center px-4 py-5 mx-auto">
+      <div className="md:w-full flex justify-between items-center px-4 py-2 mx-auto">
         {/* Site Title */}
         <h1
           className="tracking-wider md:text-xl font-semibold text-white cursor-pointer"

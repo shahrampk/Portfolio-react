@@ -1,6 +1,5 @@
 import ProjectCard from "../ProjectCard";
 import ForkifyImage from "../../assets/projectImages/forkify.png";
-import WorldAtlasImage from "../../assets/projectImages/WroldAtlas.png";
 import CineSeekImage from "../../assets/projectImages/cineseek.png";
 import Button from "../Button";
 import SectionHeading from "../SectionHeading";
@@ -25,11 +24,11 @@ const projectsData: ProjectCardDetails[] = [
   },
   {
     id: 2,
-    name: "WorldAtlass",
+    name: "Lumina",
     description:
-      "An interactive encyclopedia of the world's nations. It provides real-time data on populations, languages, and geography using the Rest Countries API with dynamic filtering.",
-    image: WorldAtlasImage,
-    link: "https://worldatlas-shahrampk.netlify.app",
+      "Lumina is a visual discovery platform designed to help users discover, explore, and organize inspiring photography in one place. Users can search and browse a constantly updated collection of high-quality images, explore trending and recent searches, and organize discoveries into personalized collections. The platform is being developed toward a smarter, more personalized visual discovery experience with AI-powered search planned for future releases.",
+    image: "https://i.ibb.co/htghBQD/Screenshot-From-2026-09-01-22-27-00.png",
+    link: "https://lumina-shahrampk.vercel.app/",
     color: "from-blue-500",
   },
   {
