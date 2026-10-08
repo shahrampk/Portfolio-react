@@ -1,5 +1,5 @@
 import Button from "../Button";
-import aboutImage from "../../assets/my-photo.avif";
+import aboutImage from "../../assets/about.jpeg";
 
 function About() {
   return (
@@ -20,31 +20,42 @@ function About() {
       <div className="col-span-3 flex flex-col gap-5 items-start">
         {/* sub Title */}
         <div>
-          <p className="text-lg md:text-2xl font-semibold 3xl:text-5xl">
-            About <span className="text-emerald-700">Me</span>
-          </p>
-
+          {/* <h1 className="text-lg md:text-2xl font-semibold 3xl:text-5xl"> */}
           <h1 className="text-2xl sm:text-4xl font-semibold my-2">
-            Hi, I’m Shahram a Frontend Developer
+            About <span className="text-emerald-700">Me</span>
           </h1>
+          {/* 
+          <h1 className="text-2xl sm:text-4xl font-semibold my-2">
+            Hi, I’m Shahram a MERN Stack Developer
+          </h1> */}
         </div>
         {/* Title */}
+
         <p className="text-sm sm:text-base 3xl:text-3xl leading-relaxed text-neutral-white-200/90 3xl:max-w-2xl 3xl:leading-loose 3xl:tracking-wider">
-          I'm Shahram, an enthusiastic web developer with a focus on creating
-          cutting-edge, responsive, and intuitive online applications. My
-          proficiency with <b className="text-emerald-600">TypeScript</b>,{" "}
-          <b className="text-emerald-600">JavaScript</b>, and{" "}
-          <b className="text-emerald-600">React.js</b> enables me to develop
-          dynamic and effective front-end experiences. I create aesthetically
-          pleasing, functional, and user-friendly interfaces using{" "}
-          <b className="text-emerald-600">Tailwind CSS</b>,{" "}
-          <b className="text-emerald-600">CSS3</b>, and{" "}
-          <b className="text-emerald-600">HTML5</b>. Clean code, smooth user
-          interactions, and scalable designs that satisfy practical requirements
-          are my main priorities. Whether it's creating interactive elements,
-          enhancing performance, or putting responsive layouts into practice, I
-          blend technical accuracy with creativity to produce web solutions that
-          have an impact.
+          I'm Shahram, a passionate{" "}
+          <b className="text-emerald-600">MERN Stack Developer</b> focused on
+          building modern, scalable, and user-friendly web applications. I work
+          across both frontend and backend development using{" "}
+          <b className="text-emerald-600">MongoDB</b>,{" "}
+          <b className="text-emerald-600">Express.js</b>,{" "}
+          <b className="text-emerald-600">React.js</b>, and{" "}
+          <b className="text-emerald-600">Node.js</b>, allowing me to build
+          complete applications from intuitive interfaces to robust server-side
+          systems. I use <b className="text-emerald-600">TypeScript</b> and{" "}
+          <b className="text-emerald-600">JavaScript</b> to write clean and
+          maintainable code, while{" "}
+          <b className="text-emerald-600">Tailwind CSS</b> helps me create
+          responsive and polished user interfaces. On the backend, I build{" "}
+          <b className="text-emerald-600">RESTful APIs</b>, implement
+          authentication and authorization, manage databases, and structure
+          applications with scalability and maintainability in mind. I value{" "}
+          <b className="text-emerald-600">clean architecture</b>,{" "}
+          <b className="text-emerald-600">performance</b>,{" "}
+          <b className="text-emerald-600">security</b>, and smooth user
+          experiences. Whether I'm developing a feature from scratch,
+          integrating an API, optimizing an application, or solving a technical
+          challenge, I aim to create practical and reliable solutions that
+          provide real value.
         </p>
         <Button text="Hire me" rout="#" />
       </div>

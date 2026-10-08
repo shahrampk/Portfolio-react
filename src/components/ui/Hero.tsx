@@ -1,5 +1,5 @@
 import Button from "../Button";
-import heroImage from "../../assets/my-photo.avif";
+import heroImage from "../../assets/my-photo.jpeg";
 function Hero() {
   return (
     <section className=" md:mt-12 flex items-center sm:mt-0 px-4 pt-24">
@@ -13,23 +13,25 @@ function Hero() {
               Muhammad Shahram
             </span>
             <span className="text-xl md:text-2xl xl:text-3xl font-semibold text-neutral-white-200">
-              A Frontend Engineer
+              A MERN Stack Developer
             </span>
           </h1>
           <p className="text-sm sm:text-base 3xl:text-3xl leading-relaxed text-neutral-white-200/90 3xl:max-w-2xl 3xl:leading-loose 3xl:tracking-wider">
-            I build modern, responsive web applications using
-            <b className="text-emerald-600 tracking-wide"> React.js</b>,
-            <b className="text-emerald-600 tracking-wide"> TypeScript</b>, and
-            <b className="text-emerald-600 tracking-wide"> JavaScript</b>,
-            focusing on clean architecture and efficient user interfaces. I
-            craft visually appealing and well-structured designs with
-            <b className="text-emerald-600 tracking-wide"> HTML5</b>,
-            <b className="text-emerald-600 tracking-wide"> CSS3</b>, and
-            <b className="text-emerald-600 tracking-wide"> Tailwind CSS</b>,
-            ensuring performance, scalability, and a smooth user experience.
+            I build modern, scalable web applications using
+            <b className="text-emerald-600 tracking-wide"> MongoDB</b>,
+            <b className="text-emerald-600 tracking-wide"> Express.js</b>,
+            <b className="text-emerald-600 tracking-wide"> React.js</b>, and
+            <b className="text-emerald-600 tracking-wide"> Node.js</b>. I focus
+            on clean architecture, robust REST APIs, and efficient user
+            interfaces. With
+            <b className="text-emerald-600 tracking-wide"> TypeScript</b>,
+            <b className="text-emerald-600 tracking-wide"> JavaScript</b>, and
+            <b className="text-emerald-600 tracking-wide"> Tailwind CSS</b>, I
+            create responsive, performant applications that deliver smooth and
+            engaging user experiences.
           </p>
           <div className="flex w-full gap-3">
-            <Button text="Hire me" rout="#" />
+            <Button text="Hire me" rout="#contact-section" />
             <a
               href="#projects-section"
               className="inline-flex items-center justify-center rounded-lg bg-neutral-gray-800/50 px-4 py-2 text-neutral-white-200/90 transition-colors duration-200 hover:bg-neutral-gray-800"
@@ -46,7 +48,7 @@ function Hero() {
               <img
                 src={heroImage}
                 alt="Portrait of Muhammad Shahram"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
             </div>
           </div>
